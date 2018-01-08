@@ -1,8 +1,20 @@
 /// scr_move_state
 scr_get_input();
 
+if (dash_key)
+{
+    state = scr_dash_state;
+    alarm[0] = room_speed / 6;
+}
+
+if (attack_key)
+{
+    image_index = 0;
+    state = scr_attack_state;
+}
+
 // Get direction
-var dir = point_direction(0, 0, xaxis, yaxis);
+dir = point_direction(0, 0, xaxis, yaxis);
 
 // Get the length
 if (xaxis == 0 and yaxis == 0)
