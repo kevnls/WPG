@@ -32,7 +32,7 @@ if (len == 0)
 if (vspd > 0)
 {
     sprite_index = spr_player_down;
-} 
+}
 else if (vspd < 0)
 {
     sprite_index = spr_player_up;
@@ -46,9 +46,4 @@ else if (hspd > 0)
 {
     sprite_index = spr_player_right;
 }
-
-
-
-
-
 
