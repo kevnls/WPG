@@ -20,6 +20,7 @@
       <sprite>sprites\spr_player_down</sprite>
       <sprite>sprites\spr_player_right</sprite>
     </sprites>
+    <sprite>sprites\spr_damage</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -39,6 +40,7 @@
     <object>objects\obj_dash_effect</object>
     <object>objects\obj_enemy_slime</object>
     <object>objects\obj_lifeform_parent</object>
+    <object>objects\obj_damage</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_one</room>
@@ -47,7 +49,7 @@
     <rtf>help.rtf</rtf>
   </help>
   <TutorialState>
-    <IsTutorial>-1</IsTutorial>
+    <IsTutorial>0</IsTutorial>
     <TutorialName>C:\Users\kevnl\AppData\Local\GameMaker-Studio\tutorials\Particles\</TutorialName>
     <TutorialPage>1</TutorialPage>
   </TutorialState>
