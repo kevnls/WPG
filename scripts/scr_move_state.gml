@@ -24,6 +24,7 @@ if (xaxis == 0 and yaxis == 0)
 else
 {
     len = spd;
+    scr_get_face();
 }
 
 // Get the hspd and vspd
@@ -41,21 +42,19 @@ if (len == 0)
     image_index = 0;
 }
 
-if (vspd > 0)
+switch (face)
 {
-    sprite_index = spr_player_down;
-}
-else if (vspd < 0)
-{
-    sprite_index = spr_player_up;
-}
-
-if (hspd < 0)
-{
-    sprite_index = spr_player_left;
-}
-else if (hspd > 0)
-{
-    sprite_index = spr_player_right;
+    case RIGHT:
+         sprite_index = spr_player_right;
+         break;
+    case LEFT:
+         sprite_index = spr_player_left;
+         break;
+    case UP:
+         sprite_index = spr_player_up;
+         break;
+    case DOWN:
+         sprite_index = spr_player_down;
+         break;
 }
 
